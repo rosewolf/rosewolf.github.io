@@ -1664,7 +1664,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #e4cd95;
+  background: #3b1cff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2250,9 +2250,6 @@ a.search-result {
 }
 body {
   background: url("/images/backGround.png");
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-attachment: fixed;
 }
 @media (min-width: 992px) {
   .full-image.full-image.full-image {
