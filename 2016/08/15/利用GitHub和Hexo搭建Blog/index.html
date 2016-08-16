@@ -106,7 +106,7 @@
 写在前面最近搭建了自己的个人Blog，选用的是GitHub Pages + Hexo的方式，当然搭建Blog的方式还有很多种，比如使用Jekyll，再比如购买主机利用Wordpress搭建动态Blog等。">
 <meta property="og:image" content="http://obw0msndw.bkt.clouddn.com/DNS%E4%BF%AE%E6%94%B9.png">
 <meta property="og:image" content="http://obw0msndw.bkt.clouddn.com/godaddy%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E6%9C%8D%E5%8A%A1%E5%99%A8.png">
-<meta property="og:updated_time" content="2016-08-16T17:17:10.206Z">
+<meta property="og:updated_time" content="2016-08-16T17:36:08.967Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="利用GitHub Pages和Hexo搭建个人blog">
 <meta name="twitter:description" content="P.S.本文使用的是Windows、Hexo 3.x版本和NexT.Pisces主题。
@@ -382,7 +382,9 @@
 <p><a href="https://github.com/" target="_blank" rel="external">GitHub</a> 是一个代码托管网站和社交编程网站。<a href="https://pages.github.com/" target="_blank" rel="external">GitHub Pages</a>是托管GitHub上静态网页的站点，提供300M免费空间（足够了）。</p>
 <p>Hexo</p>
 <blockquote>
-<p>Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。<br><em>安装步骤</em><br><code>P.S.以Windows为例，其他系统同理。出现问题请参阅官网或自行Google。</code></p>
+<p>Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。      </p>
+</blockquote>
+<p><em>安装步骤</em><br><code>P.S.以Windows为例，其他系统同理。出现问题请参阅官网或自行Google。</code></p>
 <h2 id="1-安装Git-for-Windows"><a href="#1-安装Git-for-Windows" class="headerlink" title="1.安装Git for Windows"></a>1.安装Git for Windows</h2><p>下载后按提示一路安装即可（过程中有几个可选项Git Bash什么的建议选上很好用）。</p>
 <h2 id="2-安装Node-js"><a href="#2-安装Node-js" class="headerlink" title="2.安装Node.js"></a>2.安装Node.js</h2><p>下载后按提示一路安装即可（新版自动配置Path变量，使<code>npm</code>命令生效）。</p>
 <h2 id="3-通过SSH链接到GitHub"><a href="#3-通过SSH链接到GitHub" class="headerlink" title="3.通过SSH链接到GitHub"></a>3.通过SSH链接到GitHub</h2><p><code>P.S.此处不讨论GitHub  Windows客户端，如需请Goole</code></p>
@@ -391,7 +393,6 @@
 <li>在你的主页面点击右下角图标<code>New Repository</code>创建一个新的版本库，因为使用GitHub Pages搭建静态Blog（此处不讨论依附项目的gh-pages）,所以版本库的名字按照格式<code>用户名+github.io</code>填写，之后你将要访问的Blog地址也即是<code>https://用户名.github.io</code>。</li>
 <li>其他保持默认，点击<code>Create repository</code>完成创建。  </li>
 </ol>
-</blockquote>
 <h3 id="3-2配置SSH"><a href="#3-2配置SSH" class="headerlink" title="3.2配置SSH"></a>3.2配置SSH</h3><p>打开<code>Git Shell</code>，检查电脑上现有的SSH Key:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ cd ~/. ssh 检查本机的ssh密钥</div></pre></td></tr></table></figure></p>
 <p>如果提示：No such file or directory说明你是第一次使用Git。执行下面指令生成SSH访问私钥和公钥:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ ssh-keygen -t rsa -C &quot;邮件地址@youremail.com&quot;</div></pre></td></tr></table></figure></p>
 <p>P.S.  </p>
