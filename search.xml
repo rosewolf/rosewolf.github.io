@@ -16,8 +16,7 @@
 <p><a href="https://github.com/" target="_blank" rel="external">GitHub</a> 是一个代码托管网站和社交编程网站。<a href="https://pages.github.com/" target="_blank" rel="external">GitHub Pages</a>是托管GitHub上静态网页的站点，提供300M免费空间（足够了）。</p>
 <p>Hexo</p>
 <blockquote>
-<p>Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。</p>
-<h1 id="安装步骤"><a href="#安装步骤" class="headerlink" title="安装步骤"></a><em>安装步骤</em></h1><p><code>P.S.以Windows为例，其他系统同理。出现问题请参阅官网或自行Google。</code></p>
+<p>Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。<br><em>安装步骤</em><br><code>P.S.以Windows为例，其他系统同理。出现问题请参阅官网或自行Google。</code></p>
 <h2 id="1-安装Git-for-Windows"><a href="#1-安装Git-for-Windows" class="headerlink" title="1.安装Git for Windows"></a>1.安装Git for Windows</h2><p>下载后按提示一路安装即可（过程中有几个可选项Git Bash什么的建议选上很好用）。</p>
 <h2 id="2-安装Node-js"><a href="#2-安装Node-js" class="headerlink" title="2.安装Node.js"></a>2.安装Node.js</h2><p>下载后按提示一路安装即可（新版自动配置Path变量，使<code>npm</code>命令生效）。</p>
 <h2 id="3-通过SSH链接到GitHub"><a href="#3-通过SSH链接到GitHub" class="headerlink" title="3.通过SSH链接到GitHub"></a>3.通过SSH链接到GitHub</h2><p><code>P.S.此处不讨论GitHub  Windows客户端，如需请Goole</code></p>
