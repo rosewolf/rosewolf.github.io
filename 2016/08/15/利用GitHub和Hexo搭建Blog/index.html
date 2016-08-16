@@ -106,7 +106,7 @@
 写在前面最近搭建了自己的个人Blog，选用的是GitHub Pages + Hexo的方式，当然搭建Blog的方式还有很多种，比如使用Jekyll，再比如购买主机利用Wordpress搭建动态Blog等。">
 <meta property="og:image" content="http://obw0msndw.bkt.clouddn.com/DNS%E4%BF%AE%E6%94%B9.png">
 <meta property="og:image" content="http://obw0msndw.bkt.clouddn.com/godaddy%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E6%9C%8D%E5%8A%A1%E5%99%A8.png">
-<meta property="og:updated_time" content="2016-08-16T16:50:50.308Z">
+<meta property="og:updated_time" content="2016-08-16T17:06:31.714Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="利用GitHub Pages和Hexo搭建个人blog">
 <meta name="twitter:description" content="P.S.本文使用的是Windows、Hexo 3.x版本和NexT.Pisces主题。
@@ -437,11 +437,15 @@
 <p>在 Hexo 中有两份主要的配置文件，其名称都是 <code>_config.yml</code>。 其中，一份位于站点根目录下，主要包含 Hexo 本身的配置；另一份位于主题目录下，这份配置由主题作者提供，主要用于配置主题相关的选项。为了描述方便，在以下说明中，将前者称为 <code>站点配置</code>文件， 后者称为 <code>主题配置</code>文件。  </p>
 <p><code>在配置过程中请严格按照yaml语法输入代码，在“：”后注意空一格</code><br>在<code>Hexo</code>文件夹右键<code>Git Bash</code>，输入以下代码安装Hexo主题，我选用的是NexT的Pisces<br>：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git clone https://github.com/iissnan/hexo-theme-next themes/next</div></pre></td></tr></table></figure></p>
 <p>Clone完成后，用Subline Text或者使用vim指令等打开<code>站点配置文件</code>(<code>Hexo</code>文件下的<code>_config.yml</code>文件,不再赘述），找到<code>theme</code>字段，把<code>landscape</code>换为<code>next</code>，主题即启用。  </p>
-<p>同样在该文件底下，找到<code>Deployment</code>字段，增加代码（yourname写你的GitHub用户名）：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">  type: git</div><div class="line">  repo: git@github.com:yourname/yourname.github.io.git</div><div class="line">  branch: master</div><div class="line">```  </div><div class="line">然后执行如下指令：</div></pre></td></tr></table></figure></p>
-<p>$ npm install hexo-deployer-git –save<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">接着输入：</div></pre></td></tr></table></figure></p>
-<p>$ hexo clean //清除缓存，网页正常时可忽略<br>$ hexo g //生成静态页面<br>$ hexo d //部署到GitHub上<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">(可以直接用指令`$ hexo d -g`代替)，随后按照弹窗提示，输入之前建立SSH链接时的密码，完成后便部署成功，可登录http://yourname.github.io/访问自己上传的网站了。  </div><div class="line"></div><div class="line">&gt; 后续怎么个性化使用主题官方网页已经解释得很清楚，请[移步](http://theme-next.iissnan.com/)，更多的css样式修改请自行Google。  </div><div class="line"></div><div class="line">发布新的Blog需要输入指令：</div></pre></td></tr></table></figure></p>
-<p>$ hexo n “文章标题”<br><code>``
-然后在</code>Hexo<code>文件夹里，依次打开</code>D：\Hexo\sourse_posts<code>，用</code>Markdown<code>编辑器打开编写即可，推荐使用</code>Subline Text 3<code>。保存后用指令</code>$ hexo d -g`部署便能在网站上看到。<br>更多关于写作的内容请<a href="https://hexo.io/zh-cn/docs/writing.html" target="_blank" rel="external">移步</a>。<br>更多关于Hexo、Git和Markdown的语法请自行Google。  </p>
+<p>同样在该文件底下，找到<code>Deployment</code>字段，增加代码（yourname写你的GitHub用户名）：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">  type: git</div><div class="line">  repo: git@github.com:yourname/yourname.github.io.git</div><div class="line">  branch: master</div></pre></td></tr></table></figure></p>
+<p>然后执行如下指令：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install hexo-deployer-git --save</div></pre></td></tr></table></figure></p>
+<p>接着输入：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ hexo clean //清除缓存，网页正常时可忽略</div><div class="line">$ hexo g //生成静态页面</div><div class="line">$ hexo d //部署到GitHub上</div></pre></td></tr></table></figure></p>
+<p>(可以直接用指令<code>$ hexo d -g</code>代替)，随后按照弹窗提示，输入之前建立SSH链接时的密码，完成后便部署成功，可登录<a href="http://yourname.github.io/访问自己上传的网站了。" target="_blank" rel="external">http://yourname.github.io/访问自己上传的网站了。</a>  </p>
+<blockquote>
+<p>后续怎么个性化使用主题官方网页已经解释得很清楚，请<a href="http://theme-next.iissnan.com/" target="_blank" rel="external">移步</a>，更多的css样式修改请自行Google。  </p>
+</blockquote>
+<p>发布新的Blog需要输入指令：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo n &quot;文章标题&quot;</div></pre></td></tr></table></figure></p>
+<p>然后在<code>Hexo</code>文件夹里，依次打开<code>D：\Hexo\sourse\_posts</code>，用<code>Markdown</code>编辑器打开编写即可，推荐使用<code>Subline Text 3</code>。保存后用指令<code>$ hexo d -g</code>部署便能在网站上看到。<br>更多关于写作的内容请<a href="https://hexo.io/zh-cn/docs/writing.html" target="_blank" rel="external">移步</a>。<br>更多关于Hexo、Git和Markdown的语法请自行Google。  </p>
 <p>写作图床推荐使用<a href="https://portal.qiniu.com/" target="_blank" rel="external">七牛云</a>。  </p>
 <p>##5.域名和DNS<br>购买域名推荐<a href="https://sg.godaddy.com/zh/" target="_blank" rel="external">Godaddy官网</a>（已支持中文和支付宝，附<a href="http://www.gdcodecoupon.com/" target="_blank" rel="external">优惠码链接</a>。）<br>DNS解析推荐<a href="https://www.dnspod.cn/" target="_blank" rel="external">DNSPod官网</a> 。  </p>
 <p>###设置CNAME<br>在<code>DNSPod</code>作如图设置：<br><img src="http://obw0msndw.bkt.clouddn.com/DNS%E4%BF%AE%E6%94%B9.png" alt="">  </p>
