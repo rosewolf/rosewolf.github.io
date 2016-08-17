@@ -4,6 +4,13 @@
   
     
     <entry>
+      <title><![CDATA[利用Gitcafe加速Blog访问]]></title>
+      <url>http://meethj.me/2016/08/17/%E5%88%A9%E7%94%A8Gitcafe%E5%8A%A0%E9%80%9FBlog%E8%AE%BF%E9%97%AE/</url>
+      <content type="html"><![CDATA[<p>换了个新枕头还没睡呢，下次再写hh</p>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[利用GitHub Pages和Hexo搭建个人blog]]></title>
       <url>http://meethj.me/2016/08/15/%E5%88%A9%E7%94%A8GitHub%E5%92%8CHexo%E6%90%AD%E5%BB%BABlog/</url>
       <content type="html"><![CDATA[<p><strong>P.S.</strong>本文使用的是<code>Windows</code>、<code>Hexo 3.x版本</code>和<code>NexT.Pisces主题</code>。</p>
