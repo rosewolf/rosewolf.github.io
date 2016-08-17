@@ -11,7 +11,7 @@
 <p>部分参考网站（Google不用贴了吧，或者度娘）：<br><a href="https://github.com/" target="_blank" rel="external">GitHub官网</a><br><a href="https://pages.github.com/" target="_blank" rel="external">GitHub Pages官网</a><br><a href="https://hexo.io/" target="_blank" rel="external">Hexo官网</a><br><a href="http://theme-next.iissnan.com/" target="_blank" rel="external">NexT主题使用文档</a><br><a href="https://nodejs.org/zh-cn/" target="_blank" rel="external">Node.js官网</a><br><a href="https://git-scm.com/" target="_blank" rel="external">Git官网</a><br><a href="https://sg.godaddy.com/zh/" target="_blank" rel="external">Godaddy官网</a>（购买域名已支持中文和支付宝）<br><a href="https://www.dnspod.cn/" target="_blank" rel="external">DNSPod官网</a><br><a href="https://portal.qiniu.com/" target="_blank" rel="external">七牛云官网</a>(作图床，实名认证后有10G免费空间，并没有收广告费hh~)    </p>
 <h1 id="关于GitHub-Pages和Hexo"><a href="#关于GitHub-Pages和Hexo" class="headerlink" title="关于GitHub Pages和Hexo"></a><em>关于GitHub Pages和Hexo</em></h1><p>GitHub Pages  </p>
 <blockquote>
-<p>GitHub是一个通过Git进行版本控制的软件源代码托管服务，由GitHub公司（曾称Logical Awesome）的开发者Chris Wanstrath、PJ Hyett和Tom Preston-Werner使用Ruby on Rails编写而成。<br>GitHub Pages可以被认为是用户编写的、托管在github上的静态网页。  </p>
+<p>GitHub是一个通过Git进行版本控制的软件源代码托管服务，由GitHub公司（曾称Logical Awesome）的开发者Chris Wanstrath、PJ Hyett和Tom Preston-Werner使用Ruby on Rails编写而成。<br>GitHub Pages可以被认为是用户编写的、托管在GitHub上的静态网页。  </p>
 </blockquote>
 <p><a href="https://github.com/" target="_blank" rel="external">GitHub</a> 是一个代码托管网站和社交编程网站。<a href="https://pages.github.com/" target="_blank" rel="external">GitHub Pages</a>是托管GitHub上静态网页的站点，提供300M免费空间（足够了）。</p>
 <p>Hexo</p>
@@ -21,7 +21,7 @@
 <p><em>安装步骤</em><br><code>P.S.以Windows为例，其他系统同理。出现问题请参阅官网或自行Google。</code></p>
 <h2 id="1-安装Git-for-Windows"><a href="#1-安装Git-for-Windows" class="headerlink" title="1.安装Git for Windows"></a>1.安装Git for Windows</h2><p>下载后按提示一路安装即可（过程中有几个可选项Git Bash什么的建议选上很好用）。</p>
 <h2 id="2-安装Node-js"><a href="#2-安装Node-js" class="headerlink" title="2.安装Node.js"></a>2.安装Node.js</h2><p>下载后按提示一路安装即可（新版自动配置Path变量，使<code>npm</code>命令生效）。</p>
-<h2 id="3-通过SSH链接到GitHub"><a href="#3-通过SSH链接到GitHub" class="headerlink" title="3.通过SSH链接到GitHub"></a>3.通过SSH链接到GitHub</h2><p><code>P.S.此处不讨论GitHub  Windows客户端，如需请Goole</code></p>
+<h2 id="3-通过SSH链接到GitHub"><a href="#3-通过SSH链接到GitHub" class="headerlink" title="3.通过SSH链接到GitHub"></a>3.通过SSH链接到GitHub</h2><p><code>P.S.此处不讨论GitHub  Windows客户端，如需请Google</code></p>
 <h3 id="3-1注册设置GitHub"><a href="#3-1注册设置GitHub" class="headerlink" title="3.1注册设置GitHub"></a>3.1注册设置GitHub</h3><ol>
 <li>访问<a href="https://github.com/" target="_blank" rel="external">GitHub官网</a>   </li>
 <li>在你的主页面点击右下角图标<code>New Repository</code>创建一个新的版本库，因为使用GitHub Pages搭建静态Blog（此处不讨论依附项目的gh-pages）,所以版本库的名字按照格式<code>用户名+github.io</code>填写，之后你将要访问的Blog地址也即是<code>https://用户名.github.io</code>。</li>
